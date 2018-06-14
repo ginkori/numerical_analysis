@@ -1,5 +1,4 @@
 import math
-import time
 
 
 # Функция
@@ -224,10 +223,9 @@ vert_a = float(input('Input [a;'))
 vert_b = float(input('Input ;b]'))
 epsilon = 10**-6
 
-print('Root = {0:6f}'.format(dihotomia(vert_a, vert_b, epsilon)))
-print('Root = {0:6f}'.format(nuton(vert_a, vert_b, epsilon)))
-print('Root = {0:6f}'.format(hord(vert_a, vert_b, epsilon)))
-print('Root = {0:6f}'.format(combo(vert_a, vert_b, epsilon)))
-print('Root = {0:6f}'.format(iter(vert_a, vert_b, epsilon)))
-time.sleep(1)
+print('Половинного деления Root = {0:6f}\n'.format(dihotomia(vert_a, vert_b, epsilon)))
+print('Метода хорд Root = {0:6f}\n'.format(hord(vert_a, vert_b, epsilon)))
+print('Метода Ньютона Root = {0:6f}\n'.format(nuton(vert_a, vert_b, epsilon)))
+print('Комбинированного метода Root = {0:6f}\n'.format(combo(vert_a, vert_b, epsilon)))
+print('Метода итерации Root = {0:6f}\n'.format(iter(vert_a, vert_b, epsilon)))
 
