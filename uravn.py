@@ -228,4 +228,3 @@ print('Метода хорд Root = {0:6f}\n'.format(hord(vert_a, vert_b, epsilo
 print('Метода Ньютона Root = {0:6f}\n'.format(nuton(vert_a, vert_b, epsilon)))
 print('Комбинированного метода Root = {0:6f}\n'.format(combo(vert_a, vert_b, epsilon)))
 print('Метода итерации Root = {0:6f}\n'.format(iter(vert_a, vert_b, epsilon)))
-
