@@ -219,8 +219,8 @@ def iter(a, b, eps):
         print("No roots in this interval.")
 
 
-vert_a = float(input('Input [a;'))
-vert_b = float(input('Input ;b]'))
+vert_a = 1  # float(input('Input [a;'))
+vert_b = 2  # float(input('Input ;b]'))
 epsilon = 10**-6
 
 print('Половинного деления Root = {0:6f}\n'.format(dihotomia(vert_a, vert_b, epsilon)))
