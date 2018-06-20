@@ -16,7 +16,7 @@ def jacobi(a, b):
             x_new[n] = b[n] + su
 
         # Принцип Рунге - точность = 10**-5
-        if np.allclose(x, x_new, atol=1e-6, rtol=0.):
+        if np.allclose(x, x_new, atol=1e-5, rtol=0.):
             break
 
         x = x_new
@@ -38,7 +38,7 @@ def zeidel(a, b):
             s2 = np.dot(a[n, n:], x[n:])
             x_new[n] = b[n] + s1 + s2
 
-        if np.allclose(x, x_new, atol=1e-6, rtol=0.):
+        if np.allclose(x, x_new, atol=1e-5, rtol=0.):
             break
 
         x = x_new

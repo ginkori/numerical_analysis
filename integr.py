@@ -20,7 +20,7 @@ def trapezoidal(a, b, n):
             result_2 += f(a + i*h)
         result_2 *= h
 
-        if math.fabs(result_2 - result_1) < 10**-6:
+        if math.fabs(result_2 - result_1) < 10**-5:
             break
         n *= 2
         result_1 = result_2
@@ -46,7 +46,7 @@ def simpson(a, b, n):
                 result_2 += 2*f(a + i*h)
         result_2 *= h/3
 
-        if math.fabs(result_2 - result_1) < 10**-6:
+        if math.fabs(result_2 - result_1) < 10**-5:
             break
         n *= 2
         result_1 = result_2
